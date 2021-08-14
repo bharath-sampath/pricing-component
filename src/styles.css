@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html, body
+{
+    font-family: 'Manrope';
+    height: 100%;
+    width:100%;
+}
+html
+{
+    background: url('./assets/images/bg-pattern.svg'); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center center center;
+}
+
