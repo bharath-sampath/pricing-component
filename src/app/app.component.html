@@ -1,26 +1,31 @@
 <div class="pricing-container">
   <div class="pricing-heading">
     <h2>Simple, traffic-based pricing</h2>
-    <p>Sign-up for our 30-day trial.No credit card required.</p> 
+    <p>Sign-up for our 30-day trial. No credit card required.</p> 
   </div>
   <div class="pricing-inq-card">
     <div>
       <div class="pricing-cost">
-        <div>100K PAGEVIEWS</div>
+        <div>{{calPageViews()}} PAGEVIEWS</div>
         <div class="pricing-amt">
-          <span>$16.00</span>
+          <span class="pricing-value">{{calCost()}}</span>
           <div>/ month</div>
         </div>
       </div>
-      <input type="range" min="1" max="100" value="16" class="slider" id="range">
+      <input #rangeValue (change)="reCalcPrice()" type="range" min="1" max="5" value="1" class="slider" id="range">
+      <div class="pricing-amt-2">
+        <span>{{calCost()}}</span>
+        <div>/ month</div>
+      </div>
       <div class="pricing-freq"> 
         <div>Monthly Billing </div>
         <label class="switch">
-          <input type="checkbox">
+          <input #yearlyBill (change)=reCalcPrice() type="checkbox">
           <span class="toggle round"></span>
-        </label>        <div>Yearly Billing</div>
-
-        <span>25% discount</span>
+        </label>        
+        <div>Yearly Billing</div>
+        <span class="disc-long">25% discount</span>
+        <span class="disc-short">-25%</span>
       </div> 
       <hr width=100%>
     </div>
