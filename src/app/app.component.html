@@ -1,7 +1,9 @@
 <div class="pricing-container">
   <div class="pricing-heading">
     <h2>Simple, traffic-based pricing</h2>
-    <p>Sign-up for our 30-day trial. No credit card required.</p> 
+    <div class="pricing-subhead">
+      <div>Sign-up for our 30-day trial.</div>
+      <div> No credit card required.</div></div>
   </div>
   <div class="pricing-inq-card">
     <div>
@@ -12,7 +14,9 @@
           <div>/ month</div>
         </div>
       </div>
-      <input #rangeValue (change)="reCalcPrice()" type="range" min="1" max="5" value="1" class="slider" id="range">
+      <div class="slider">
+        <input #rangeValue (change)="reCalcPrice()" type="range" min="1" max="5" value="1"  id="range">
+      </div>
       <div class="pricing-amt-2">
         <span>{{calCost()}}</span>
         <div>/ month</div>
@@ -31,9 +35,9 @@
     </div>
     <div class="pricing-inq-footer">
       <div class="pricing-inq-chk">
-        <div><img src='../assets/images/icon-check.svg'>Unlimited websites</div>
-        <div><img src='../assets/images/icon-check.svg'>100% data ownership</div>
-        <div><img src='../assets/images/icon-check.svg'>Email reports</div>
+        <div class="pricing-inq-chkf"><img src='../assets/images/icon-check.svg'><div>Unlimited websites</div></div>
+        <div class="pricing-inq-chkf"><img src='../assets/images/icon-check.svg'><div>100% data ownership</div></div>
+        <div class="pricing-inq-chkf"><img src='../assets/images/icon-check.svg'><div>Email reports</div></div>
       </div>
     <button>Start my trial</button>
   </div>
