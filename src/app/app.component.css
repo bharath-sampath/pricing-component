@@ -73,8 +73,8 @@
 }
 .slider [type="range"]
 {
-  width: 100%;
   -webkit-appearance: none;
+  width: 100%;
   height: .5rem;
   border-radius: 1.5rem;
   background: hsl(224, 65%, 95%);
@@ -95,8 +95,7 @@
   background-image: url('../assets/images/icon-slider.svg');
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transition: background .15s ease-in-out;
-  transition: background .15s ease-in-out;
+
 }
 
 
@@ -194,7 +193,6 @@ input:checked + .toggle:before {
 {
     display: flex;
     flex-direction: column;
-
     gap:.5rem
 }
 
@@ -208,7 +206,6 @@ button
     font-family: 'Manrope';
     background-color:hsl(227, 35%, 25%);
     color:hsl(226, 100%, 87%)
-
 }
 
 .disc-short
