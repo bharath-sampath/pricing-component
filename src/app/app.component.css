@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width:100%;    
+    width:100%;
     justify-content:flex-start;
 }
 .pricing-heading
@@ -17,8 +17,8 @@
     margin-top:5rem;
     margin-bottom:5rem;
     padding:2rem 0 2rem 0;
-    text-align: center;   
-    min-width: 375px;   
+    text-align: center;
+    min-width: 375px;
 }
 .pricing-heading>p
 {
@@ -37,7 +37,7 @@
 }
 .pricing-inq-card
 {
-    border-radius:.5rem;  
+    border-radius:.5rem;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -67,17 +67,17 @@
 }
 .pricing-amt
 {
-    display:flex;   
+    display:flex;
     align-items: center;
     gap:.5rem;
 }
 .slider [type="range"]
 {
   width: 100%;
-  -webkit-appearance: none;    
+  -webkit-appearance: none;
   height: .5rem;
-  border-radius: 1.5rem; 
-  background: hsl(224, 65%, 95%);       
+  border-radius: 1.5rem;
+  background: hsl(224, 65%, 95%);
   outline: none;
   padding: 0;
   margin:0;
@@ -99,7 +99,8 @@
   transition: background .15s ease-in-out;
 }
 
-.slider [type="range"]::-webkit-slider-thumb:hover 
+
+.slider [type="range"]::-webkit-slider-thumb:hover
 {
     opacity: 1;
     box-shadow: 0 20px 20px 2px hsl(174, 86%, 45%);
@@ -193,7 +194,7 @@ input:checked + .toggle:before {
 {
     display: flex;
     flex-direction: column;
-   
+
     gap:.5rem
 }
 
@@ -207,7 +208,7 @@ button
     font-family: 'Manrope';
     background-color:hsl(227, 35%, 25%);
     color:hsl(226, 100%, 87%)
-    
+
 }
 
 .disc-short
@@ -228,7 +229,7 @@ button
 .pricing-inq-footer
 {
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   gap:2rem;
 }
 
@@ -243,13 +244,13 @@ button{
 
 .pricing-amt
 {
-    display:none;   
+    display:none;
 }
 
 .pricing-amt-2
 {
     padding-top:2rem;
-    display:flex;   
+    display:flex;
     justify-content: center;
     align-items: center;
     gap:.5rem;
